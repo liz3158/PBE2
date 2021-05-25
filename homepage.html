@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>malaysia culture</title>
+        <link href="homepage.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+        <script type="text/javascript">
+
+         var titleText = document.title;
+
+         function titleMarquee() {
+
+          titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+          document.title = titleText;
+          setTimeout("titleMarquee()", 450);
+          }
+
+         </script>
+
+         <script>
+            // Get all elements with class="closebtn"
+            var close = document.getElementsByClassName("closebtn");
+            var i;
+
+            // Loop through all close buttons
+            for (i = 0; i < close.length; i++) {
+            // When someone clicks on a close button
+            close[i].onclick = function(){
+
+               // Get the parent of <span class="closebtn"> (<div class="alert">)
+               var div = this.parentElement;
+
+               // Set the opacity of div to 0 (transparent)
+               div.style.opacity = "0";
+
+               // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+               setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+            }
+            </script>
+
+    </head>
+
+    <body onload="titleMarquee()">
+
+        <div class="topnav">
+            <a class="active" href="homepage.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="blog.html">Blog</a>
+            <a href="subscribe.html">About</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+
+        <div class="alert">
+         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+         Hello welcome to this website, click to <a href="subscribe.html"> subscribe </a>  our channel
+       </div>
+
+       
+
+        <div id="show_bg" align="center">
+            <table class="bar" width="1500" height="300">
+                <tr>
+                    <td class="LIZ"><b><font face="impact">MALAYSIA CULTURE</font></b></td>
+                </tr>
+                <tr>
+                    <td><font class="time">See Our Life With Smile</font></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h1 class="ml1">
+         <span class="text-wrapper">
+           <span class="line line1"></span>
+           <span class="letters">HELLO!! MY FELLOW FRIEND</span>
+           <span class="line line2"></span>
+         </span>
+       </h1>
+
+      <br>
+      <br>
+      <br>
+       
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+      </script>
+      <script>
+          var textWrapper = document.querySelector('.ml1 .letters');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+         anime.timeline({loop: true})
+         .add({
+            targets: '.ml1 .letter',
+            scale: [0.3,1],
+            opacity: [0,1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 600,
+            delay: (el, i) => 70 * (i+1)
+         }).add({
+            targets: '.ml1 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 700,
+            offset: '-=875',
+            delay: (el, i, l) => 80 * (l - i)
+         }).add({
+            targets: '.ml1',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+         });
+      </script>
+
+      <div align="center">
+         <table class="intro" width="1000" height="300">
+            <tr>
+               <td align="center">Hai, my name is Liz Wong Wan Qi. You could just call me Liz, very simple. This website you will get to know more about<br> the Malaysia culture, i had do many research to create this website. I hope you enjoy travel on this website.<br>For more faster to know about me click me link below to know more details.<br><br><a href="subscribe.html"><i>Click Here to Know</i></a></td>
+            </tr>
+         </table>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+      <div  align="center">
+         <table class="things" width="800" cellpadding="20" >
+            <tr >
+               <td align="center"><a href="subscribe.html"><img src="img/jalur gemilang.gif" width="500"><br></a></td>
+               <td><a href="news.html"><h3>THE NEWS</h3></a><h5>Everyday we will renew the content, you will never get bored. Fun news everyday for you, with the daily bring you in early morning, to bring you a freshness start of your day</h5></td>
+            </tr>
+            <tr >
+               <td><a href="blog.html"><h3>THE BLOG</h3></a><h5>The introduction of the culture Malaysia. Which is Written by the author who create this blog, get to know more of our Malaysia by click this page to review. <br><br>
+               Get to know more about the culture of Malaysia hope you enjoy. If you had any question, feel free to ask to us by <a href="contactus.html"><i>click this link</i></a>.</h5></td>
+               <td align="center"><a href="subscribe.html"><img src="img/giphy.gif" width="500"><br></a></td>
+            </tr>
+            <tr >
+               <td align="center"><a href="subscribe.html"><img src="img/doghi.gif" width="500"><br></a></td>
+               <td><a href="subscribe.html"><h3>SUBSCRIBE US</h3></a><h5>If you interests in our channel please subscribe our channel, by subscribe our channel you could get everyday morning news by sending to your email. we will be happy if you give us the reward.</h5></a></td>
+            </tr>
+         </table>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+
+        <footer class="container-fluid bg-grey py-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="row">
+                        <div class="col-md-6 ">
+                           <div class="logo-part">
+                              <h2 class="w-50 logo-footer" >CULTURE</h2>
+                              <p>Difference is of the essence of humanity. </p>
+                              <p>Difference is an accident of birth and it should therefore
+                                never be the source of hatred or conflict. The answer to difference is to respect it. Therein lies a
+                                most fundamental principle of peace: respect for diversity.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6 px-4">
+                           <h6> About Me</h6>
+                           <p>If opportunity doesn't knock, build a door.</p>
+                           <a href="subscribe.html" class="btn-footer"> More Info </a><br>
+                           <a href="contactus.html" class="btn-footer"> Contact Us</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="row">
+                        <div class="col-md-6 px-4">
+                           <h6> Author</h6>
+                           <div class="row ">
+                              <div class="col-md-6">
+                                 <p>Hi, my name is Liz Wong Wan Qi. I now study Diploma Teknologi Digital in Politeknik Mukah.</p>
+                              </div>
+                              <div class="col-md-6 px-4">
+                                 <p>This is a website that so far i most like it.Hpe you enjoy this website</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 ">
+                           <h6> Newsletter</h6>
+                           <div class="social">
+                              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                           </div>
+                           <form class="form-footer my-3">
+                              <input type="text"  placeholder="search here...." name="search">
+                              <input type="button" value="Go" >
+                           </form>
+                           <p>More fun story is waiting gor your to discover</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </footer>
+
+    </body>
